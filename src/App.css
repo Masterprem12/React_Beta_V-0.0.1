@@ -1,5 +1,7 @@
 .App {
+  justify-content: center;
   text-align: center;
+  font-family: cursive;
 }
 
 .App-logo {
@@ -29,3 +31,4 @@
 .small {
   font-size: 0.75rem;
 }
+

@@ -5,11 +5,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src="Octocat.png" className="App-logo" alt="logo" />
+        <h1>hello world, Index is here</h1>
         <p>
           GitHub Codespaces <span className="heart">♥️</span> React
         </p>
         <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
+          i dont want to go home
         </p>
         <p>
           <a
@@ -22,6 +23,9 @@ function App() {
           </a>
         </p>
       </header>
+      <footer >z
+        <a href="">@me.js</a>
+      </footer>
     </div>
   );
 }

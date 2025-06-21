@@ -1,0 +1,30 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin: 5mm;
+    font-family: cursive;
+    font-size: 15px;
+}
+
+h1 {
+    display: flex;
+    font-size: 50px;
+    color: rgb(7, 214, 110);
+}
+
+h1:hover {
+    display: flex;
+    justify-content: center;
+    color : red;
+    font-size: 60px;
+} 
+
+.img {
+    border: solid red;
+    border-radius: 90px;
+    box-shadow: -6px -19px 88px 0px rgba(224,0,0,0.4);
+    -webkit-box-shadow: -6px -19px 88px 0px rgba(224,0,0,0.4);
+    -moz-box-shadow: -6px -19px 88px 0px rgba(224,0,0,0.4);
+
+}
