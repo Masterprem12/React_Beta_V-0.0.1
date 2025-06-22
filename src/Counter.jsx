@@ -1,4 +1,4 @@
-import './Counter.css'
+import './style.css'
 import { useState } from 'react';
 
 export default function Counter (){
@@ -15,6 +15,12 @@ export default function Counter (){
     const handleClick2 = () => {
         setCount(count - 1 );
     };
+    const [value,setValue] = useState("");
+    function onTextChange(event){
+        console.log("function event got call : " +event.target,value)
+        setValue(event.target.value);
+    }
+
 
     return (
         <body>
@@ -31,7 +37,19 @@ export default function Counter (){
                     <button type="button" onClick={reset}> 
                         reset
                     </button>
-                    <button onClick={refreshPage} class = "footer">Click to reload!</button>
+                </center>
+                <center>
+                    <div>
+                        <p>
+                            <input type="number" value={value} onChange={(event)=>onTextChange(event)} />
+                            <br />
+                            <span>Celsius : {value} to Fahrenheit : {value *1.8+32}</span>
+                        </p>
+                    </div>
+                    <hr />
+                    <p>
+                        <button onClick={refreshPage} class = "footer">Click when u got bug</button>
+                    </p>
                 </center>
                 </p>
             </div>

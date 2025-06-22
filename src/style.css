@@ -1,0 +1,100 @@
+/* style.css */
+
+/* General styling for the body to provide a background color and center the content */
+body {
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container for the BMI calculator */
+.bmi-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bmi-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Styling for the main heading */
+.bmi-container h1 {
+  color: #1e3a8a;
+  margin-bottom: 25px;
+  font-size: 2.5rem;
+}
+
+/* Styling for the input field sections */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.input-group input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensures padding doesn't affect the total width */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input[type="number"]:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  outline: none;
+}
+
+/* Styling for the result display */
+.bmi-result {
+  margin-top: 25px;
+  font-size: 1.2rem;
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+.bmi-result span {
+  font-size: 1.8rem;
+  color: #16a34a;
+  margin-left: 10px;
+}
+
+/* Styling for the calculate button */
+button.calculate-btn {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button.calculate-btn:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px);
+}
+
+button.calculate-btn:active {
+  transform: translateY(0);
+}
